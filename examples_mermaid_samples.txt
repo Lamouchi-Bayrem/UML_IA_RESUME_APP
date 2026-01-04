@@ -1,0 +1,31 @@
+classDiagram
+    class User {
+        +userId : String
+        +name : String
+        +email : String
+        +createdAt : Date
+        +login(password: String) : Boolean
+        +logout() : void
+        +updateProfile(data: Object) : Boolean
+    }
+    
+    class Profile {
+        +profileId : String
+        +avatar : String
+        +bio : String
+        +preferences : Object
+        +isPublic : Boolean
+        +updateAvatar(url: String) : void
+        +setBio(text: String) : void
+    }
+    
+    class Role {
+        +roleId : String
+        +name : String
+        +permissions : List~String~
+        +addPermission(perm: String) : void
+        +removePermission(perm: String) : void
+    }
+    
+    User ||--|| Profile : has
+    User }o--|| Role : assigned

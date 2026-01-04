@@ -1,0 +1,40 @@
+/* Custom styles for Free AI UML Generator */
+body {
+    font-family: 'sans serif';
+}
+
+.stTextArea textarea {
+    border-radius: 8px;
+    border: 2px solid #667eea;
+}
+
+.stButton>button {
+    background-color: #667eea;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.stButton>button:hover {
+    background-color: #5a6ed8;
+}
+
+.stSelectbox {
+    border-radius: 8px;
+}
+
+.stSidebar .stSelectbox div[data-baseweb="select"]>div {
+    border: 2px solid #667eea;
+    border-radius: 8px;
+}
+
+.stSpinner {
+    color: #667eea;
+}
+
+.mermaid-diagram {
+    background-color: #f0f2f6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
