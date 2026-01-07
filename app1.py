@@ -1,6 +1,3 @@
-# streamlit_mermaid_fix.py
-# Run this to test and fix Mermaid rendering issues in your Streamlit app
-
 import streamlit as st
 import streamlit.components.v1 as components
 import requests
