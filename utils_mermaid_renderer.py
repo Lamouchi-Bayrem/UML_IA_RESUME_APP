@@ -53,9 +53,9 @@ def render_mermaid_diagram(mermaid_code: str):
     # Fallback to HTML component
     try:
         renderer.render_html_component(mermaid_code)
-        st.info("✅ Rendered with HTML component")
+        st.info(" Rendered with HTML component")
     except Exception as e:
-        st.error(f"❌ HTML rendering failed: {e}")
+        st.error(f" HTML rendering failed: {e}")
         
         # Final fallback: image service
         try:
